@@ -5,8 +5,9 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('C:\Users\Acer\OneDrive\Desktop\Weather.jpg');
-    /*background: linear-gradient(to right, #4CAF50, #2196F3);*/
+    background-image: url(RainyWeather.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .container {
@@ -58,6 +59,11 @@ body {
     background-color: #1565C0;
 }
 
+#city-input-btn:disabled {
+    background-color: #90CAF9;
+    cursor: not-allowed;
+}
+
 #weather-info {
     display: none;
 }
@@ -86,4 +92,35 @@ body {
 #date {
     font-size: 14px;
     color: rgb(255, 0, 0);
+}
+
+h1 {
+    margin: 0 0 8px 0;
+    color: #1e8e3e;
+}
+
+h3 {
+    margin: 4px 0 16px 0;
+    color: #333;
+}
+
+#error {
+    margin: 6px 0 0 0;
+    color: #d32f2f;
+    font-size: 14px;
+    min-height: 18px;
+}
+
+@media (max-width: 520px) {
+    .weather-card {
+        width: 92vw;
+        padding: 16px;
+        border-radius: 16px;
+    }
+    #city-input {
+        width: 100%;
+    }
+    #city-input-btn {
+        width: 100%;
+    }
 }

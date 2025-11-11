@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -14,7 +15,7 @@
 <body>
 	<div class="container">
 		<div class="weather-card">
-			<h1 style="color: rgb(28, 171, 28);">
+			<h1>
 				Weather App
 			</h1>
 			<h3>
@@ -22,15 +23,15 @@
 			</h3>
 			<input type="text" id="city-input"
 				placeholder="Enter city name">
-			<button id="city-input-btn"
-					onclick="weatherFn($('#city-input').val())">
+			<button id="city-input-btn">
 					Get Weather
 			</button>
+			<p id="error" role="alert" aria-live="assertive"></p>
 			<div id="weather-info"
-				class="animate__animated animate__fadeIn">
+				class="animate__animated animate__fadeIn" role="region" aria-live="polite">
 				<h3 id="city-name"></h3>
 				<p id="date"></p>
-				<img id="weather-icon" src="C:\Users\Acer\OneDrive\Desktop\images1.png" alt="Weather Icon">
+				<img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather Icon">
 				<p id="temperature"></p>
 				<p id="description"></p>
 				<p id="wind-speed"></p>
