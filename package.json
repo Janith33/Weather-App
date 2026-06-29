@@ -8,6 +8,9 @@
     "start": "node server.js",
     "run": "npm start"
   },
+  "dependencies": {
+    "express": "^4.22.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Janith33/Weather-App.git"
