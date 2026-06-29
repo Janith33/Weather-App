@@ -4,7 +4,7 @@ const apiKey =
 	'f00c38e0279b7bc85480c3fe775d518c';
 
 $(document).ready(function () {
-	weatherFn('Pune');
+	weatherFn('#city-input');
 	$('#city-input').on('keydown', function (e) {
 		if (e.key === 'Enter') {
 			$('#city-input-btn').click();
